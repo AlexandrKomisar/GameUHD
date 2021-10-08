@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Game UHD</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <section class="app-header">
+          <span class="app-header__logo">Game UHD</span>
+          <ul class="app-header__menu">
+            <li class="app-header__menu_list">
+              <a class="app-header__menu_list_item" href="#">Главная</a>
+            </li>
+            <li class="app-header__menu_list">
+              <a class="app-header__menu_list_item" href="#">Галерея</a>
+            </li>
+            <li class="app-header__menu_list">
+              <a class="app-header__menu_list_item" href="#">Ожидаемые</a>
+            </li>
+            <li class="app-header__menu_list">
+              <a class="app-header__menu_list_item" href="#">
+                <div class="checkbox-switch">
+                  <input
+                    type="checkbox"
+                    checked=""
+                    onchange="T.toggleToobarStatus()"
+                    value="1"
+                    name="status"
+                    class="input-checkbox"
+                    id="toolbar-active"
+                  />
+                  <div class="checkbox-animate">
+                    <span class="checkbox-off">UA</span>
+                    <span class="checkbox-on">RU</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="app-header__menu_list">
+              <a class="app-header__menu_list_item" href="#">
+                <div class="checkbox-switch">
+                  <input
+                    type="checkbox"
+                    checked=""
+                    onchange="T.toggleToobarStatus()"
+                    value="1"
+                    name="status"
+                    class="input-checkbox"
+                    id="toolbarStyle-active"
+                  />
+                  <div class="checkbox-animate">
+                    <span class="checkbox-off">Dark</span>
+                    <span class="checkbox-on">Light</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="app-header__menu_list">
+              <a class="app-header__menu_list_item" href="#">Вход</a>
+            </li>
+          </ul>
+        </section>
+        <section class="app-intro">
+          <div class="app-intro__media">
+            <video
+              class="app-intro__media_video"
+              src="./video/1.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+        </section>
+        <section>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_4XE9JOt4fw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>

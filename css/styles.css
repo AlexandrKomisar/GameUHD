@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Maler";
+  src: url(../fonts/Maler.ttf);
+}
+
+@font-face {
+  font-family: "Oswald 700";
+  src: url(../fonts/Oswald-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Oswald 400";
+  src: url(../fonts/Oswald-Regular.ttf);
+}
+
+* {
+  margin: 0;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: row;
+  background: #bbb8b8;
+  padding: 20px;
+}
+
+.app-header__logo {
+  font-family: "Maler";
+  font-size: 30px;
+  padding: 15px;
+  width: 10%;
+}
+
+.app-header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.app-header__menu_list {
+  list-style: none;
+  padding: 15px;
+}
+
+.app-header__menu_list_item {
+  font-family: "Oswald 700";
+  font-size: 28px;
+  text-decoration: none;
+  color: #3b3a3a;
+}
+
+.checkbox-switch {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.checkbox-switch input.input-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.checkbox-switch .checkbox-animate {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  background-color: #95a5a6;
+  transition: background 0.25s ease-out 0s;
+}
+
+.checkbox-switch .checkbox-animate:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background-color: #7f8c8d;
+  top: 5px;
+  left: 5px;
+  transition: left 0.3s ease-out 0s;
+  z-index: 10;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate {
+  background-color: #d3f0df;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate:before {
+  left: 55px;
+  background-color: #4c4b4d;
+}
+
+.checkbox-switch .checkbox-off,
+.checkbox-switch .checkbox-on {
+  float: left;
+  color: rgba(55, 23, 163, 0.678);
+  font-weight: 700;
+  padding-top: 6px;
+  transition: all 0.3s ease-out 0s;
+}
+
+.checkbox-switch .checkbox-off {
+  margin-left: 30px;
+  opacity: 1;
+}
+
+.checkbox-switch .checkbox-on {
+  display: none;
+  float: right;
+  margin-right: 35px;
+  opacity: 0;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate .checkbox-off {
+  display: none;
+  opacity: 0;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate .checkbox-on {
+  display: block;
+  opacity: 1;
+}
+
+.app-intro {
+  border: thick double black;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-intro__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #91a5dd url(../img/1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.app-intro__media_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+/*# sourceMappingURL=styles.css.map */
