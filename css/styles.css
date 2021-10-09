@@ -17,10 +17,21 @@
   margin: 0;
 }
 
+.light-theme {
+  --header-background: rgb(187, 184, 184);
+  --header-color: #000000;
+}
+
+.dark-theme {
+  --header-background: #121212;
+  --header-color: #FFFFFF;
+}
+
 .app-header {
   display: flex;
   flex-direction: row;
-  background: #bbb8b8;
+  background: var(--header-background);
+  color: var(--header-color);
   padding: 10px;
   position: fixed;
   z-index: 10;
@@ -51,7 +62,7 @@
   font-family: "Oswald 700";
   font-size: 28px;
   text-decoration: none;
-  color: #3b3a3a;
+  color: var(--header-color);
 }
 
 .checkbox-switch {

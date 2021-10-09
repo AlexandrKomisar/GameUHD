@@ -16,3 +16,13 @@
 *{
     margin: 0;
 }
+
+.light-theme{
+    --header-background: rgb(187, 184, 184);
+    --header-color: #000000; 
+}
+
+.dark-theme{
+    --header-background: #121212;
+    --header-color: #FFFFFF; 
+}

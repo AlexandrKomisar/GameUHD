@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="light-theme">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,42 +23,10 @@
               <a class="app-header__menu_list_item" href="#">Ожидаемые</a>
             </li>
             <li class="app-header__menu_list">
-              <a class="app-header__menu_list_item" href="#">
-                <div class="checkbox-switch">
-                  <input
-                    type="checkbox"
-                    checked=""
-                    onchange="T.toggleToobarStatus()"
-                    value="1"
-                    name="status"
-                    class="input-checkbox"
-                    id="toolbar-active"
-                  />
-                  <div class="checkbox-animate">
-                    <span class="checkbox-off">UA</span>
-                    <span class="checkbox-on">RU</span>
-                  </div>
-                </div>
-              </a>
+              <a class="app-header__menu_list_item" href="#"> ru/ua </a>
             </li>
             <li class="app-header__menu_list">
-              <a class="app-header__menu_list_item" href="#">
-                <div class="checkbox-switch">
-                  <input
-                    type="checkbox"
-                    checked=""
-                    onchange="T.toggleToobarStatus()"
-                    value="1"
-                    name="status"
-                    class="input-checkbox"
-                    id="toolbarStyle-active"
-                  />
-                  <div class="checkbox-animate">
-                    <span class="checkbox-off">Dark</span>
-                    <span class="checkbox-on">Light</span>
-                  </div>
-                </div>
-              </a>
+              <a class="app-header__menu_list_item theme" href="#"> Тема </a>
             </li>
             <li class="app-header__menu_list">
               <a class="app-header__menu_list_item" href="#modal">Вход</a>
@@ -117,5 +85,7 @@
         <footer></footer>
       </div>
     </div>
+
+    <script src="./js/theme.js"></script>
   </body>
 </html>
