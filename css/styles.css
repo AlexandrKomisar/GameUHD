@@ -236,4 +236,22 @@
   min-height: 100%;
   object-fit: cover;
 }
+
+.app-video__title {
+  background: var(--header-background);
+  color: var(--header-color);
+  padding: 10px;
+  height: 50px;
+  text-align: center;
+  font-family: "Oswald 700";
+  font-size: 28px;
+}
+
+.app-video__content {
+  display: grid;
+}
+
+.video__card {
+  width: 30%;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,22 @@
+.app-video {
+    &__title {
+        background: var(--header-background);
+        color: var(--header-color);
+        padding: 10px;
+        height: 50px;
+        text-align: center;
+        font-family: "Oswald 700";
+        font-size: 28px;
+    }
+    &__content {
+        display: grid;
+    }
+    
+}
+
+.video {
+    &__card {
+        width: 30%;
+    }
+
+}
