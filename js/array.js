@@ -6,3 +6,7 @@ const gameUHD = [
     {name: 'Call of Duty: Black Ops Cold War', year: '2020', genre: 'action', video: ['Yv3Sfz-87Wk',]},
     {name: '', year: '', genre: '', video: []},
 ]
+
+
+// const newGameUHD = gameUHD.map(person => `${person.name} (${person.video})`)
+// console.log(newGameUHD);
