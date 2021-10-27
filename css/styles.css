@@ -251,12 +251,34 @@
   display: flex;
   justify-content: space-around;
   background: var(--header-background);
+  padding-bottom: 30px;
 }
 
 .video__card {
   width: 32%;
-  height: 400px;
+  height: 420px;
   background: rgba(210, 105, 30, 0.87) url("../img/play1.png") no-repeat center;
   background-size: 10%;
+}
+
+.app-footer {
+  display: flex;
+  flex-direction: row;
+  background: var(--header-background);
+  color: var(--header-color);
+  padding: 10px;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app-footer__box {
+  width: 33%;
+}
+
+.app-footer__box_title {
+  font-family: "Maler";
+  font-size: 18px;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

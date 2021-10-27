@@ -1,0 +1,18 @@
+.app-footer {
+  display: flex;
+  flex-direction: row;
+  background: var(--header-background);
+  color: var(--header-color);
+  padding: 10px;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  &__box {
+    width: 33%;
+    &_title {
+      font-family: "Maler";
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}

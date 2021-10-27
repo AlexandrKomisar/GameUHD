@@ -1,32 +1,27 @@
 .app-video {
-    &__title {
-        background: var(--header-background);
-        color: var(--header-color);
-        padding: 10px;
-        height: 50px;
-        text-align: center;
-        font-family: "Oswald 700";
-        font-size: 28px;
-    }
-    &__content {
-        display: flex;
-        justify-content: space-around;
-        background: var(--header-background);
-       
-        
-    }
-    
+  &__title {
+    background: var(--header-background);
+    color: var(--header-color);
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    font-family: "Oswald 700";
+    font-size: 28px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    background: var(--header-background);
+    padding-bottom: 30px;
+  }
 }
 
 .video {
-    &__card {
-        width: 32%;
-        height: 400px; //56.25%;
-        background: rgba(210, 105, 30, 0.87) url("../img/play1.png") no-repeat center;
-        background-size: 10%;
-       
-
-
-    }
-
+  &__card {
+    width: 32%;
+    height: 420px;
+    background: rgba(210, 105, 30, 0.87) url("../img/play1.png") no-repeat
+      center;
+    background-size: 10%;
+  }
 }
