@@ -10,3 +10,4 @@ let gameUHD = [
 
 // const newGameUHD = gameUHD.map(person => `${person.name} (${person.video})`)
 // console.log(newGameUHD);
+const field = document.querySelector('.field');
